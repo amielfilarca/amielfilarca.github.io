@@ -1,0 +1,143 @@
+.container {
+  min-height: 100vh;
+  display: flex;
+  padding: 5% 5%;
+  overflow-x: hidden;
+}
+
+.main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.svg {
+  width: 100px;
+  height: 100px;
+  margin: 0 0 25px;
+  stroke: #ffffff;
+  stroke-width: 2;
+  stroke-linejoin: round;
+  stroke-linecap: round;
+}
+
+.mainText {
+  font-weight: 400;
+  font-size: 72px;
+  text-transform: uppercase;
+}
+
+.typed {
+  animation: blinkingText 1.2s infinite;
+}
+
+.row {
+  display: flex;
+  align-items: center;
+}
+
+.nav {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.navItems {
+  border: none;
+  outline: none;
+  background: none;
+  font-size: 144px;
+  font-family: inherit;
+  color: inherit;
+  font-weight: 600;
+  cursor: pointer;
+  -webkit-text-stroke: 1px var(--primary);
+  -webkit-text-fill-color: white;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  text-decoration: none;
+}
+
+.navItems:hover {
+  -webkit-text-stroke: 1px var(--primary);
+  -webkit-text-fill-color: var(--primary);
+}
+
+@keyframes blinkingText {
+  0% {
+    border-right: 0.20vw solid var(--primary);
+  }
+  49% {
+    border-right: 0.20vw solid var(--primary);
+  }
+  60% {
+    border-right: 0.20vw solid transparent;
+  }
+  99% {
+    border-right: 0.20vw solid transparent;
+  }
+  100% {
+    border-right: 0.20vw solid var(--primary);
+  }
+}
+
+@media (max-width: 1900px) {
+  .mainText {
+    font-size: 60px;
+  }
+  .navItems {
+    font-size: 120px;
+  }
+}
+
+@media (max-width: 1588px) {
+  .mainText {
+    font-size: 50px;
+  }
+  .navItems {
+    font-size: 100px;
+  }
+}
+
+@media (max-width: 1331px) {
+  .mainText {
+    font-size: 40px;
+  }
+  .navItems {
+    font-size: 80px;
+  }
+}
+
+@media (max-width: 1073px) {
+  .mainText {
+    font-size: 30px;
+  }
+  .navItems {
+    font-size: 60px;
+  }
+}
+
+@media (max-width: 816px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+  }
+  .main {
+    justify-content: flex-end;
+  }
+  .svg {
+    width: 12.25vw;
+    height: 12.25vw;
+    margin: 0 0 1.22vw;
+  }
+  .mainText {
+    font-size: 6.12vw;
+  }
+  .navItems {
+    font-size: 12.25vw;
+  }
+}

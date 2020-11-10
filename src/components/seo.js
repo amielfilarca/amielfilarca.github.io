@@ -34,7 +34,8 @@ function SEO({ description, lang, meta, title }) {
         lang,
       }}
       title={title}
-      titleTemplate={defaultTitle ? `%s | ${defaultTitle}` : null}
+      // titleTemplate={defaultTitle ? `%s | ${defaultTitle}` : null}
+      titleTemplate={defaultTitle ? `${defaultTitle}` : null}
       meta={[
         {
           name: `description`,
@@ -58,7 +59,8 @@ function SEO({ description, lang, meta, title }) {
         },
         {
           name: `twitter:creator`,
-          content: site.siteMetadata?.author || ``,
+          // content: site.siteMetadata?.author || ``,
+          content: `@AmielFilarca`,
         },
         {
           name: `twitter:title`,

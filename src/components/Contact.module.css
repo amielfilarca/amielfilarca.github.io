@@ -1,0 +1,241 @@
+.container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  padding: 2.5% 5%;
+  background-color: var(--bg);
+  align-items: center;
+  position: relative;
+}
+
+.repetitionContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 350px;
+}
+
+.title2 {
+  font-size: 144px;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  -webkit-text-stroke: 1px var(--primary);
+  -webkit-text-fill-color: var(--bg);
+  text-transform: uppercase;
+  position: relative;
+  /* top: -7vw; */
+  top: -140px;
+  opacity: 0.5;
+}
+
+.title {
+  /* font-size: 7.5vw; */
+  font-size: 144px;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  -webkit-text-stroke: 1px var(--primary);
+  -webkit-text-fill-color: var(--bg);
+  text-transform: uppercase;
+  position: relative;
+  /* top: -14vw; */
+  top: -280px;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 5%;
+}
+
+.h2 {
+  /* font-size: 1.25vw; */
+  font-size: 28px;
+  font-weight: 400;
+  text-align: center;
+}
+
+.links {
+  display: flex;
+  justify-content: center;
+  /* margin: 2.5% 0; */
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.col {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.linkItem {
+  text-decoration: none;
+  -webkit-text-stroke: 1px var(--primary);
+  -webkit-text-fill-color: var(--bg);
+  /* font-size: 3.75vw; */
+  font-size: 72px;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin: 0 3%;
+}
+
+.linkItem:hover {
+  -webkit-text-fill-color: var(--primary);
+}
+
+.footer {
+  display: block;
+  height: 50px;
+  width: 100%;
+  text-align: center;
+  position: absolute;
+  bottom: 0;
+  text-transform: uppercase;
+  /* font-size: 0.9375vw; */
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.resume {
+  position: relative;
+  padding: 10px 20px;
+  text-decoration: none;
+  -webkit-text-stroke: 1px var(--primary);
+  -webkit-text-fill-color: var(--bg);
+  font-size: 80px;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin: 2% 0 2.5%;
+}
+
+.resume::before,
+.resume::after {
+  box-sizing: inherit;
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.resume::before,
+.resume::after {
+  border: 3px solid transparent;
+  width: 0;
+  height: 0;
+}
+
+.resume::before {
+  top: 0;
+  left: 0;
+}
+
+.resume::after {
+  bottom: 0;
+  right: 0;
+}
+
+.resume:hover {
+  -webkit-text-fill-color: var(--primary);
+}
+
+.resume:hover::before,
+.resume:hover::after {
+  width: 100%;
+  height: 100%;
+}
+
+.resume:hover::before {
+  border-top-color: var(--primary);
+  border-right-color: var(--primary);
+  transition: width 0.25s ease-out, height 0.25s ease-out 0.25s;
+}
+
+.resume:hover::after {
+  border-bottom-color: var(--primary);
+  border-left-color: var(--primary);
+  transition: border-color 0s ease-out 0.5s, width 0.25s ease-out 0.5s,
+    height 0.25s ease-out 0.75s;
+}
+
+@media (max-width: 816px) {
+  .content {
+    margin-bottom: 20%;
+  }
+
+  .title2 {
+    font-size: 14.7vw;
+    top: -12.25vw;
+  }
+
+  .title {
+    font-size: 14.7vw;
+    top: -24.5vw;
+  }
+
+  .resume {
+    font-size: 9.8vw;
+  }
+
+  .h2 {
+    font-size: 3.43vw;
+  }
+
+  .linkItem {
+    font-size: 8.82vw;
+  }
+
+  .footer {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 425px) and (min-height: 425px) {
+  .repetitionContainer {
+    height: 150px;
+  }
+  .content {
+    margin: 0 0 20%;
+  }
+  .resume {
+    font-size: 50px;
+    margin: 10% 0;
+  }
+  .h2 {
+    font-size: 12px;
+    margin-bottom: 5%;
+  }
+  .links {
+    flex-direction: column;
+    align-items: center;
+  }
+  .linkItem {
+    font-size: 40px;
+  }
+}
+
+@media (max-width: 350px) and (min-height: 350px) {
+  .repetitionContainer {
+    height: 125px;
+  }
+  .content {
+    margin: 0 0 20%;
+  }
+  .resume {
+    font-size: 48px;
+    margin: 5% 0;
+  }
+  .h2 {
+    font-size: 18px;
+    margin-bottom: 5%;
+  }
+  .links {
+    flex-direction: column;
+    align-items: center;
+  }
+  .linkItem {
+    font-size: 36px;
+  }
+}
