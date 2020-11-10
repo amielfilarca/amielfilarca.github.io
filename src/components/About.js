@@ -70,8 +70,8 @@ export default function About() {
             Frontend
           </b>
           <p data-sal="slide-up" data-sal-delay="300" data-sal-easing="ease">
-            HTML5, CSS3, JavaScript, JSX, React, Gatsby, Vue, Nuxt, Flutter,
-            Dart, JSON, XML, Webpack
+            HTML5, CSS3, JavaScript, JSX, React, Gatsby.js, Vue.js, Nuxt.js,
+            Flutter, Dart, JSON, XML, Webpack
           </p>
           <b
             data-sal="slide-up"
@@ -82,7 +82,7 @@ export default function About() {
             Backend
           </b>
           <p data-sal="slide-up" data-sal-delay="300" data-sal-easing="ease">
-            Firebase, Python, Java, C++, Node, Linux, REST, GraphQL, MySQL
+            Firebase, Python, Java, C#, Node.js, Linux, REST, GraphQL, MySQL
           </p>
           <b
             data-sal="slide-up"
@@ -115,7 +115,7 @@ export default function About() {
             Other
           </b>
           <p data-sal="slide-up" data-sal-delay="300" data-sal-easing="ease">
-            Oracle Database Management, SAP, Cisco Networking (Routing,
+            Oracle Database Management, SAP ERP, Cisco Networking (Routing,
             Switching, IoT), Packet Tracer
           </p>
         </div>
