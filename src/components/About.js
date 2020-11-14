@@ -82,7 +82,7 @@ export default function About() {
             Backend
           </b>
           <p data-sal="slide-up" data-sal-delay="300" data-sal-easing="ease">
-            Firebase, Python, Java, C#, Node.js, Linux, REST, GraphQL, MySQL
+            Firebase, Python, Node.js, Linux, REST, GraphQL, MySQL
           </p>
           <b
             data-sal="slide-up"
