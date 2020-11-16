@@ -14,11 +14,7 @@ export default function Contact() {
         </h1>
       </div>
       <div className={styles.content}>
-        <a
-          className={styles.resume}
-          href="/Amiel Filarca - Resume.pdf"
-          download
-        >
+        <a className={styles.resume} href="/Amiel-Filarca_CV.pdf" download>
           Resume
         </a>
         <h2
