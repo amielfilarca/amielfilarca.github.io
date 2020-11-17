@@ -1,7 +1,6 @@
 import instagramClone from "./assets/instagram-clone.png"
 import resumeBuilder from "./assets/resume-builder.png"
 import whereIsWaldo from "./assets/where-is-waldo.png"
-import memoryCard from "./assets/memory-card.png"
 
 const projects = [
   {
@@ -15,14 +14,6 @@ const projects = [
   },
   {
     id: 2,
-    image: memoryCard,
-    name: "Memory Card",
-    description: "A memory game using Artifact cards.",
-    tools: "React, Gatsby",
-    link: "https://amielfilarca.github.io/memory-card/",
-  },
-  {
-    id: 3,
     image: whereIsWaldo,
     name: "Where is Waldo",
     description:
@@ -31,7 +22,7 @@ const projects = [
     link: "https://amielfilarca.github.io/where-is-waldo",
   },
   {
-    id: 4,
+    id: 3,
     image: resumeBuilder,
     name: "Resume Builder",
     description: "Generates a resume that is downloadable in PDF format.",
