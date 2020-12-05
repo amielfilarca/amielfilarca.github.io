@@ -1,5 +1,5 @@
 import React from "react"
-import styles from "./About.module.css"
+import styles from "../styles/About.module.css"
 import Image from "../images/af.jpg"
 
 export default function About() {
@@ -67,22 +67,11 @@ export default function About() {
             data-sal-easing="ease"
             className={styles.b}
           >
-            Frontend
+            {"Languages & Software"}
           </b>
           <p data-sal="slide-up" data-sal-delay="300" data-sal-easing="ease">
-            HTML5, CSS3, JavaScript, JSX, React, Gatsby.js, Vue.js, Nuxt.js,
-            Flutter, Dart, JSON, XML, Webpack
-          </p>
-          <b
-            data-sal="slide-up"
-            data-sal-delay="300"
-            data-sal-easing="ease"
-            className={styles.b}
-          >
-            Backend
-          </b>
-          <p data-sal="slide-up" data-sal-delay="300" data-sal-easing="ease">
-            Firebase, Python, Node.js, Linux, REST, GraphQL, MySQL
+            HTML5, CSS3, JavaScript, Python, React, Gatsby.js, Vue.js, Nuxt.js,
+            React Native, Flutter, Dart, Firebase, GraphQL
           </p>
           <b
             data-sal="slide-up"
@@ -93,7 +82,7 @@ export default function About() {
             Development Tools
           </b>
           <p data-sal="slide-up" data-sal-delay="300" data-sal-easing="ease">
-            Figma, Git, GitHub, NPM, Visual Studio Code, Android Studio
+            Figma, Git, GitHub, NPM, Webpack, Visual Studio Code
           </p>
           <b
             data-sal="slide-up"
@@ -101,22 +90,21 @@ export default function About() {
             data-sal-easing="ease"
             className={styles.b}
           >
-            Soft skills
+            Operating Systems
+          </b>
+          <p data-sal="slide-up" data-sal-delay="300" data-sal-easing="ease">
+            Windows 10, Linux
+          </p>
+          <b
+            data-sal="slide-up"
+            data-sal-delay="300"
+            data-sal-easing="ease"
+            className={styles.b}
+          >
+            Soft Skills
           </b>
           <p data-sal="slide-up" data-sal-delay="300" data-sal-easing="ease">
             Organization, Collaboration, Leadership
-          </p>
-          <b
-            data-sal="slide-up"
-            data-sal-delay="300"
-            data-sal-easing="ease"
-            className={styles.b}
-          >
-            Other
-          </b>
-          <p data-sal="slide-up" data-sal-delay="300" data-sal-easing="ease">
-            Oracle Database Management, SAP ERP, Cisco Networking (Routing,
-            Switching, IoT), Packet Tracer
           </p>
         </div>
       </div>

@@ -1,7 +1,7 @@
 import React, { useState } from "react"
 import { AnimatePresence, motion } from "framer-motion"
 
-import styles from "./Projects.module.css"
+import styles from "../styles/Projects.module.css"
 import projects from "../projects"
 
 export default function Projects() {

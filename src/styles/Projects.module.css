@@ -29,10 +29,6 @@
   cursor: pointer;
 }
 
-/* .projectItem:hover {
-  padding: 0 30px;
-} */
-
 .selected {
   cursor: pointer;
   -webkit-text-fill-color: var(--secondary);
@@ -65,7 +61,6 @@
 .repetitionContainer {
   position: absolute;
   transform: rotate(-90deg);
-  /* background: red; */
   height: 0;
   width: 0;
   left: 10%;
